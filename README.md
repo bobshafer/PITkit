@@ -1,6 +1,8 @@
 # PITkit
 Participatory Interface Theory Docs and Such
 
+(Some of the following is a little stale - see Links.md and Axioms.md for latest, but most of this is still ok, too).
+
 There are (will be) various threads from AI conversations and explanations from me.
 
 The Participatory Interface Theory (PIT) is a new interpretation of Quantum Mechanics that goes well beyond the domain of QM in its applicability.
