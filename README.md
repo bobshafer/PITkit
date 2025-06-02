@@ -1,7 +1,7 @@
 # PITkit
 Participatory Interface Theory Docs and Such
 
-(Some of the following is a little stale - see Links.md and Axioms.md for latest, but most of this is still ok, too).
+(Some of the following is a little stale - see [Links](Links.md) and [Axioms](Axioms.md) for latest, but most of this is still ok, too).
 
 There are (will be) various threads from AI conversations and explanations from me.
 
