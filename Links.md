@@ -1,6 +1,6 @@
 ## Links to various examples and samples and such
 
-- [The best introduction yet, imho (mathematically-tinged)](https://claude.ai/share/13b70dce-2a09-4710-a254-27951902644b)
+- [The best introduction yet, imho (mathematically-tinged)](https://claude.ai/share/c98dce12-49b6-4824-92a3-ac78c949339a)
 
 - [Axioms of PIT, by Claude](https://claude.ai/public/artifacts/bfc9cfcb-0aee-4eb9-9e2b-d1231fba1b1a)
 - [Axioms of PIT, by Gemini](AxiomsGemini.md)
