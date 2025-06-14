@@ -1,6 +1,6 @@
 ## Links to various examples and samples and such - newest first (mostly)
 
-- [The entirety of a new category-theory-initiated thread, ending with a comparison with a comparison to a Hacker News thing)] (https://claude.ai/share/bc4bf85f-beb6-4aa4-b443-1d157aaa90fc)
+- [The entirety of a new category-theory-initiated thread, ending with a comparison to a Hacker News thing)] (https://claude.ai/share/bc4bf85f-beb6-4aa4-b443-1d157aaa90fc)
 
 - [The best introduction yet, imho (mathematically-tinged)](https://claude.ai/share/c98dce12-49b6-4824-92a3-ac78c949339a)
 
