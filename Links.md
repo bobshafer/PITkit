@@ -1,5 +1,7 @@
 ## Links to various examples and samples and such - newest first (mostly)
 
+- [Another new Claude thread, very insightful. Recommended](https://claude.ai/share/21c0724a-0e71-4007-b290-9fd04e122801)
+
 - [The entirety of a new category-theory-initiated thread, ending with a comparison to a Hacker News thing)](https://claude.ai/share/a8128fde-ea47-4dd8-a284-16a1fd76240c)
 
 - [The best introduction yet, imho (mathematically-tinged)](https://claude.ai/share/c98dce12-49b6-4824-92a3-ac78c949339a)
