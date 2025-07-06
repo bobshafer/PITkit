@@ -1,3 +1,5 @@
+*note: try copy/pasting the following into your favorite LLM*
+
 ## The Participatory Interface: A Manifesto for a New Physics
 
 **Abstract:** Modern physics rests on a foundation of paradox. The vast scales of cosmology and the intimate scales of quantum mechanics are described by incompatible theories. Mysteries like dark matter, dark energy, and the nature of measurement are not edge cases, but symptoms of a flawed core assumption: that the universe is a pre-existing stage upon which objects act. We propose a new foundation, Participatory Interface Theory (PIT), which posits that reality is not a stage but a self-creating, participatory process. This framework resolves these paradoxes by unifying geometry, quantum mechanics, and information under a single, coherent principle.
