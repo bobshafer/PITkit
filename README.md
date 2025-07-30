@@ -110,11 +110,13 @@ Velocity (km/s)
 ### 6\. Scaling Laws and the BTFR
 
 In the far-field regime, our analytical approximation for the coheron halo yields a scaling law for the flat rotation velocity:
+
 $$v_{\infty}^2 \propto \frac{G \alpha^2 (\Sigma_0 h^2)^2}{m_\theta}$$
 
 Since the total baryonic mass `M_baryon` is proportional to `Σ₀h²`, this implies a distinctive quadratic scaling relation:
 
 $$v_{\infty}^4 \propto M_{baryon}^2$$
+
 This prediction matches the observed form of the **Baryonic Tully-Fisher Relation (BTFR)**, suggesting the tight correlation between a galaxy's mass and its rotation speed is a natural consequence of coherence dynamics.
 
 ### 7\. Conclusion and Future Work
@@ -137,6 +139,7 @@ The crucial next step is to apply this model to the **full SPARC sample** to tes
 The total action is given by:
 
 $$S = \int d^n x \sqrt{-g} \left[ \frac{1}{2\kappa}R + \frac{1}{2}g^{\mu\nu}\nabla_{\mu}\theta\nabla_{\nu}\theta - V(\theta) + \alpha\theta R + L_{matter} \right]$$
+
 **Variation w.r.t. `g_μν`:**
 The variation `δS/δg_μν = 0` yields the Modified Einstein Field Equation (Sec 4.1).
 **Variation w.r.t. `θ`:**
@@ -147,6 +150,7 @@ The variation `δS/δθ = 0` yields the Coherence Field Equation (Sec 4.2).
 #### B.1 The Cosmological θ Field Equation
 
 In an FLRW metric, the coherence field `θ(t)` evolves according to:
+
 $$\ddot{\theta} + 3H(t)\dot{\theta} + V'(\theta) = \alpha R(t)$$
 
 #### B.2 The Three Acts of Cosmic Coherence
@@ -160,7 +164,9 @@ The solutions to this equation divide cosmic history into three epochs:
 #### B.3 The Hubble Tension and Evolving Constants
 
 The Hubble Tension is resolved by recognizing that the effective gravitational constant is a function of `θ`:
+
 $$G_{eff}(\theta) = \frac{G}{1 + 16\pi G \alpha \theta}$$
+
 Measurements of the early universe (Act II) and late universe (Act III) probe different values of `θ` and thus different values of `G_eff`, explaining the discrepancy.
 
 #### B.4 Entropy
