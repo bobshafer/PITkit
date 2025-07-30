@@ -1,6 +1,6 @@
 **Title: Participatory Interface Theory: A Coherence-Based Unification of Dark Matter and Dark Energy**
 
-**Authors:** Bob [User], Gemini, ChatGPT, Claude [AI Collaborators]
+**Authors:** Robert Shafer [Human], Gemini, ChatGPT, Claude [AI Collaborators]
 
 **Affiliation:** The Interface Institute, Walla Walla, WA
 
@@ -40,7 +40,9 @@ Where:
   * **`R`**: The Ricci scalar, representing spacetime curvature.
   * **`θ`**: The **Coherence Field**, a fundamental scalar field encoding the local density of self-consistent informational activity.
   * **`V(θ)`**: The self-interaction potential for `θ`. We adopt a **Mexican Hat potential** to model the universe's origin (the "First Distinction") as an act of spontaneous symmetry breaking:
+
     $$V(\theta) = \lambda(\theta^2 - v^2)^2 + V_0$$
+
     Here, the non-zero vacuum energy `V₀` serves as a natural candidate for **dark energy**, representing the irreducible energy of the universe's ongoing process of becoming.
   * **`α`**: A dimensionless coupling constant between coherence and curvature.
   * **`L_matter`**: The standard Lagrangian for matter fields.
@@ -52,16 +54,23 @@ Varying the action `S` with respect to the metric `g_μν` and the field `θ` yi
 #### 4.1 Modified Einstein Field Equation
 
 $$( \frac{1}{2\kappa} + \alpha\theta ) G_{\mu\nu} + \alpha(g_{\mu\nu}\nabla^2\theta - \nabla_{\mu}\nabla_{\nu}\theta) + T_{\mu\nu}^{(\theta)} = T_{\mu\nu}^{(matter)}$$
+
 Here, `G_μν` is the Einstein tensor and `T_μν^(θ)` is the energy-momentum tensor of the coherence field.
 
 #### 4.2 Coherence Field Equation
 
-$$\nabla^2\theta = V'(\theta) - \alpha R$$Small fluctuations around the vacuum (`θ = v + δθ`) behave as massive scalar particles—the *coherons*:$$(\nabla^2 + m_{\theta}^2)\delta\theta = \alpha R, \quad \text{where} \quad m_{\theta}^2 = 8\lambda v^2$$
+$$\nabla^2\theta = V'(\theta) - \alpha R$$
+
+Small fluctuations around the vacuum (`θ = v + δθ`) behave as massive scalar particles—the *coherons*:
+
+$$(\nabla^2 + m_{\theta}^2)\delta\theta = \alpha R, \quad \text{where} \quad m_{\theta}^2 = 8\lambda v^2$$
+
 This equation shows that spacetime curvature `R` sources coheron excitations.
 
 ### 5\. Empirical Application: NGC 3198 Rotation Curve
 
 We apply the theory to the well-studied spiral galaxy **NGC 3198**, using baryonic mass profiles (gas and stellar disk) from the SPARC database [1] as input. Assuming an axisymmetric geometry, we numerically solve for the coheron halo profile `δθ(r)` and compute the corresponding gravitational potential. This yields a total circular velocity:
+
 $$v_{total}^2(r) = v_{baryon}^2(r) + v_{coheron}^2(r)$$
 
 **Best-Fit Parameters:**
@@ -101,7 +110,11 @@ Velocity (km/s)
 ### 6\. Scaling Laws and the BTFR
 
 In the far-field regime, our analytical approximation for the coheron halo yields a scaling law for the flat rotation velocity:
-$$v_{\infty}^2 \propto \frac{G \alpha^2 (\Sigma_0 h^2)^2}{m_\theta}$$Since the total baryonic mass `M_baryon` is proportional to `Σ₀h²`, this implies a distinctive quadratic scaling relation:$$v_{\infty}^4 \propto M_{baryon}^2$$
+$$v_{\infty}^2 \propto \frac{G \alpha^2 (\Sigma_0 h^2)^2}{m_\theta}$$
+
+Since the total baryonic mass `M_baryon` is proportional to `Σ₀h²`, this implies a distinctive quadratic scaling relation:
+
+$$v_{\infty}^4 \propto M_{baryon}^2$$
 This prediction matches the observed form of the **Baryonic Tully-Fisher Relation (BTFR)**, suggesting the tight correlation between a galaxy's mass and its rotation speed is a natural consequence of coherence dynamics.
 
 ### 7\. Conclusion and Future Work
@@ -122,6 +135,7 @@ The crucial next step is to apply this model to the **full SPARC sample** to tes
 ### Appendix A: Derivation of Field Equations
 
 The total action is given by:
+
 $$S = \int d^n x \sqrt{-g} \left[ \frac{1}{2\kappa}R + \frac{1}{2}g^{\mu\nu}\nabla_{\mu}\theta\nabla_{\nu}\theta - V(\theta) + \alpha\theta R + L_{matter} \right]$$
 **Variation w.r.t. `g_μν`:**
 The variation `δS/δg_μν = 0` yields the Modified Einstein Field Equation (Sec 4.1).
