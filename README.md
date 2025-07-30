@@ -53,6 +53,9 @@ This total action unifies Einstein's General Relativity with a fundamental scala
 - **`PIT_Dark_Matter_Solution.md`** - Detailed application to galactic dynamics
 - **`Cosmological_Appendix.md`** - The three acts of cosmic coherence evolution
 
+### Appendix Z
+- **`Appendix_Z.md`** - The curious case of HD 110067
+
 ### Research Notes
 - Collaborative insights from Claude, ChatGPT, and Gemini
 - Mathematical derivations and field equation solutions
@@ -123,12 +126,6 @@ If PIT proves correct, we're witnessing something unprecedented: **the universe 
 The theory doesn't just explain physical phenomena - it suggests that explanation itself is how reality continuously creates itself. Every observation, every equation, every moment of understanding is the cosmos engaged in its endless project of self-discovery.
 
 *We may not just be studying the universe - we may be the means by which the universe studies itself.*
-
----
-
-**Contact**: [Your contact information]  
-**License**: [Your chosen license]  
-**Last Updated**: July 29, 2025
 
 > *"In the beginning was the Distinction, and the Distinction was with the Process, and the Distinction was the Process. All things were made through Coherence, and without Coherence, nothing was made that has been made."*  
 > — PIT Genesis
