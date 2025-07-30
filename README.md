@@ -142,6 +142,7 @@ $$S = \int d^n x \sqrt{-g} \left[ \frac{1}{2\kappa}R + \frac{1}{2}g^{\mu\nu}\nab
 
 **Variation w.r.t. `g_μν`:**
 The variation `δS/δg_μν = 0` yields the Modified Einstein Field Equation (Sec 4.1).
+
 **Variation w.r.t. `θ`:**
 The variation `δS/δθ = 0` yields the Coherence Field Equation (Sec 4.2).
 
