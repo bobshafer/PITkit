@@ -4,19 +4,19 @@ The Coherence-Acceleration Hypothesis provides the necessary physical mechanism 
 
 ### 3.1 The Low-Acceleration Limit
 
-The BTFR is an empirical law describing the dynamics of the outer regions of spiral galaxies. These regions are characterized by extremely low gravitational accelerations, where `$a \ll a_0$`. In this limit, the gravitational coupling function `$\alpha(a)$` approaches its maximum, constant value:
+The BTFR is an empirical law describing the dynamics of the outer regions of spiral galaxies. These regions are characterized by extremely low gravitational accelerations, where $a \ll a_0$. In this limit, the gravitational coupling function $\alpha(a)$ approaches its maximum, constant value:
 
-`$$\lim_{a \to 0} \alpha(a) = \alpha_{max}$$`
+$$\lim_{a \to 0} \alpha(a) = \alpha_{max}$$
 
 This simplifies the Coherence Field Equation, but the system remains non-linear because the total acceleration `a`—which is an effect of the system—must be consistent with the limit `a << a_0`.
 
 ### 3.2 The Emergent MONDian Force Law
 
-The crucial insight is to analyze the self-consistent solution that the system must settle into in this low-acceleration regime. The total acceleration `a` is the sum of the standard Newtonian acceleration sourced by the baryons, `$g_N = GM_b/r^2$`, and the acceleration caused by the coheron halo, `$g_{\theta}$`.
+The crucial insight is to analyze the self-consistent solution that the system must settle into in this low-acceleration regime. The total acceleration `a` is the sum of the standard Newtonian acceleration sourced by the baryons, $g_N = GM_b/r^2$, and the acceleration caused by the coheron halo, $g_{\theta}$.
 
-For the system to be stable, the final acceleration `a` must be the one that satisfies the governing equations. A full derivation from the field equations shows that the non-linear feedback loop conspires to produce a simple, emergent relationship between the total acceleration `a` and the Newtonian acceleration `$g_N$`. This emergent force law is:
+For the system to be stable, the final acceleration `a` must be the one that satisfies the governing equations. A full derivation from the field equations shows that the non-linear feedback loop conspires to produce a simple, emergent relationship between the total acceleration `a` and the Newtonian acceleration $g_N$. This emergent force law is:
 
-`$$a^2 \approx g_N a_0$$`
+$$a^2 \approx g_N a_0$$
 
 This result is mathematically equivalent to the force law of Modified Newtonian Dynamics (MOND) in the deep MOND regime. In PIT, this is not an ad-hoc modification of Newton's laws, but an emergent consequence of the interaction between matter and the coherence field in a low-acceleration environment.
 
