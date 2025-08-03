@@ -27,6 +27,8 @@ def calculate_pit_velocity(radius_kpc, v_gas, v_disk, upsilon_disk, a_0_kms):
     total_acceleration = np.zeros_like(g_newtonian)
     for i, g_n_val in enumerate(g_newtonian):
         if g_n_val == 0:
+            # Zero Newtonian acceleration implies zero total acceleration
+            # This maintains total_acceleration[i] = 0
             continue
         def equation_to_solve(a):
             return a * mu(a / a_0_kms) - g_n_val

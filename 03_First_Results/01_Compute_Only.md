@@ -1,9 +1,6 @@
-***
-### 03_First_Results.md
-markdown
 ## 3. First Results: The SPARC Gauntlet and the Solar System Test
 
-With the theoretical framework of the **Coherence-Acceleration Hypothesis** established, we proceed to the two most critical validation tests of the theory. The first is a rigorous confrontation with galactic-scale observational data, which we call the "SPARC Gauntlet." The second is a crucial "sanity check" to ensure the theory is compatible with the high-precision gravitational tests in our own solar system. As we show here, Participatory Interface Theory (PIT) passes both tests successfully.
+With the theoretical framework of the **Coherence-Acceleration Hypothesis** established, we proceed to the two most critical validation tests of the theory. The first is a rigorous confrontation with galactic-scale observational data, which we call the "SPARC Gauntlet." The second is a crucial "sanity check" to ensure the theory is compatible with the high-precision gravitational tests in our own solar system. As we show here, Participatory Interface Theory (PIT) passes both tests successfully. (See chapter 2, Appendix D for more info).
 
 ### 3.1 A Universal Law: The Global Fit to the SPARC Sample
 
