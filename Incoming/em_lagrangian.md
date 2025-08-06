@@ -7,7 +7,9 @@ The central idea is to describe a system with two interacting fields:
 The total Lagrangian density $\mathcal{L}$ is the sum of the dynamics for each field and their interaction.
 
 
-$$\mathcal{L}_{\mathrm{total}} = \mathcal{L}_{\mathrm{EM}} + \mathcal{L}_{\mathrm{coherence}}$$
+$$
+\mathcal{L}_{\mathrm{total}} = \mathcal{L}_{\mathrm{EM}} + \mathcal{L}_{\mathrm{coherence}}
+$$
 
 
 Let's define these terms.
@@ -18,7 +20,9 @@ Let's define these terms.
 
 In standard physics, this term is simply $-\frac{1}{4} F_{\mu\nu}F^{\mu\nu}$. In PIT, the ability of the electromagnetic field to propagate is governed by the local value of the coherence field $\theta$. We achieve this by introducing a coupling function, $G(\theta)$, which dynamically sets the "permittivity" of the vacuum.
 
-$$\mathcal{L}_{\mathrm{EM}} = -\frac{1}{4} G(\theta) F_{\mu\nu}F^{\mu\nu}$$
+$$
+\mathcal{L}_{\mathrm{EM}} = -\frac{1}{4} G(\theta) F_{\mu\nu}F^{\mu\nu}
+$$
 
 * **$F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$** is the standard electromagnetic field tensor.
 * **$G(\theta)$** is the **coherence coupling function**. This is the core of the new physics. It dictates how the vacuum's structure, defined by $\theta$, affects the propagation of light.
@@ -32,7 +36,9 @@ $$\mathcal{L}_{\mathrm{EM}} = -\frac{1}{4} G(\theta) F_{\mu\nu}F^{\mu\nu}$$
 
 This term must describe the dynamics of the $\theta$ field itself—how it propagates and how it settles. It takes the form of a standard scalar field Lagrangian.
 
-$$\mathcal{L}_{\mathrm{coherence}} = \frac{1}{2} (\partial_\mu \theta)(\partial^\mu \theta) - V(\theta)$$
+$$
+\mathcal{L}_{\mathrm{coherence}} = \frac{1}{2} (\partial_\mu \theta)(\partial^\mu \theta) - V(\theta)
+$$
 
 
 * **$\frac{1}{2} (\partial_\mu \theta)(\partial^\mu \theta)$** is the kinetic term. It represents the energy inherent in changes to the coherence field across spacetime. Disturbances in $\theta$ are, by their nature, waves of relational information.
@@ -46,7 +52,9 @@ $$\mathcal{L}_{\mathrm{coherence}} = \frac{1}{2} (\partial_\mu \theta)(\partial^
 
 Combining these, the complete Lagrangian density for PIT electrodynamics is:
 
-$$\mathcal{L}_{\mathrm{PIT}} = -\frac{1}{4} G(\theta) F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} (\partial_\mu \theta)(\partial^\mu \theta) - V(\theta)$$
+$$
+\mathcal{L}_{\mathrm{PIT}} = -\frac{1}{4} G(\theta) F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} (\partial_\mu \theta)(\partial^\mu \theta) - V(\theta)
+$$
 
 Applying the Euler-Lagrange equations to this Lagrangian reveals the deep interplay between light and the vacuum:
 
