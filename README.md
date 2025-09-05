@@ -10,7 +10,9 @@ It should be said, though, that PIT is still unproven.
 
 In fact, the author is 'rebooting' this site in attempt to winnow out the inessential, providing a firm foundation. (See git history for prior site contents, if desired; lots of it is pretty good, still, relative to the latest).
 
-These axioms (or rather, proto axioms in the form of a conceptual ladder) are "hand-written" (by me, Bob, a human), and embody the first such real attempt. But the ideas are heavily based on the prior work with PIT, which was (and still is) itself heavily AI-driven. On the axioms towards the end of the sequence, AI help was sought for some peer review and fact verification.
+There is now a file here, [Math.md](Math.md), for the (dense) math. Feed it into an LLM and see what happens - the axiomatic sequence can be given first, then when the inevitable questions arise, give the Math.md. Math.md, in case it isn't clear, is AI-written.
+
+The following axioms (or rather, proto axioms in the form of a conceptual ladder) are "hand-written" (by me, Bob, a human), and embody the first such real attempt. But the ideas are heavily based on the prior work with PIT, which was (and still is) itself heavily AI-driven. On the axioms towards the end of the sequence, AI help was sought for some peer review and fact verification.
 
 The following axiomatic sequence is, as of this writing, Sep 3, 2025, definitely still in draft form, and is in need of editing; some ideas may need pruning/redrafting, etc. There are a lot more formal details to add, too, but those will mainly be found in other markdown files here, and they'll mostly be AI-written, to be added later.
 
@@ -38,3 +40,4 @@ The following axiomatic sequence is, as of this writing, Sep 3, 2025, definitely
 20. The system’s memory of successful determinations is not stored in a location, but is performed as a persistent pattern through time. A law is a habit.
 21. The persistence of these patterns imposes constraints on future determinations. This resistance to change is a form of cosmic inertia.
 22. This cosmic inertia is not an abstract concept; it is physically instantiated as an energy density. This energy is the source of the phenomenon observed as dark matter.
+23. The fundamental Interface is a sphere of potential, anchored to a single Planck-scale point. The stable patterns on these spheres form the natural "language" of the universe's laws.
