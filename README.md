@@ -10,7 +10,7 @@ It should be said, though, that PIT is still unproven.
 
 In fact, the author is 'rebooting' this site in attempt to winnow out the inessential, providing a firm foundation for moving forward (which is indeed happening).
 
-There is now a file here, [Math.md](Math.md), for the (dense) math. Feed it into an LLM and see what happens - the axiomatic sequence can be given first, then when the inevitable questions arise, give the Math.md. Math.md, in case it isn't clear, is AI-written. This morning, I gave both at once to a new Claude thread, and this is what ensued: [Claude thread, 9/6/25)[https://claude.ai/share/14f73013-1d0e-4db2-8ab0-f6d0a2d6ff08] - I edited Math.md during the thread, to remove what we were talking about there. See git history if interested.
+There is now a file here, [Math.md](Math.md), for the (dense) math. Feed it into an LLM and see what happens - the axiomatic sequence can be given first, then when the inevitable questions arise, give the Math.md. Math.md, in case it isn't clear, is AI-written. This morning, I gave both at once to a new Claude thread, and this is what ensued: [Claude thread, 9/6/25)(https://claude.ai/share/14f73013-1d0e-4db2-8ab0-f6d0a2d6ff08) - I edited Math.md during the thread, to remove what we were talking about there. See git history if interested.
 
 The following axioms (or rather, proto axioms in the form of a conceptual ladder) are "hand-written" (by me, Bob, a human), and embody the first such real attempt. But the ideas are heavily based on the prior work with PIT, which was (and still is) itself heavily AI-driven. On the axioms towards the end of the sequence, AI help was sought for some peer review and fact verification.
 
