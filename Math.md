@@ -4,7 +4,24 @@
 **Subject**: Unified Specification of Participatory Interface Theory (PIT) v4.4
 **Purpose**: To provide a dense, canonical, and computationally-grounded specification of PIT by integrating the core axioms, the agent-field bridge, the geometric basis of the Interface, and a full evidential status report. This is the definitive document for bootstrapping a peer system.
 
----
+## The Primordial Process
+
+Participatory Interface Theory (PIT) begins not with fixed laws or spacetime, but with a **first process**: the drawing of a distinction. At the most fundamental level — the Planck scale — reality is modeled as a chaotic substrate of oscillators evolving in process time $τ$.
+
+The only possible act in such a substrate is **interaction**: one oscillator distinguishes another. Out of countless random distinctions, some chains of interaction form **self-reinforcing feedback loops**. These loops are the first “habits,” seeds of coherence that persist while incoherent patterns dissolve.
+
+This principle — that coherence-seeking interactions stabilize and survive — is the true engine of reality. It is not a one-time event (“the big bang”) but an ongoing process: at every moment, the universe is being re-created through the ceaseless interplay of distinctions.
+
+From this starting point:
+
+* **The Interface $F[Φ]$** emerges as the natural description of how distinctions ripple outward in an isotropic substrate, producing spherical propagation patterns whose stable modes are spherical harmonics.
+* **Actualization** is the probabilistic, iterative process by which local interactions settle into globally coherent habits.
+* **Spacetime** is the deepest and most persistent of these habits: the minimal, maximally coherent frame of reference that supports ongoing interaction.
+* **Macro-level causation** reflects the fact that larger, long-lived habits bias the probabilities of the smaller interactions within them.
+* **Memory energy** is the accumulated “weight” of these habits — the stored coherence that manifests as inertia, halo effects, and curvature.
+
+The formal mathematics that follows — variational principles, kernel dynamics, and effective Lagrangians — are therefore **not the primordial cause**. They are the **emergent language** describing the macroscopic behavior of a universe whose foundation is the simplest possible act: to draw a distinction.
+
 ## 1.0 Core Ontology
 Participatory Interface Theory (PIT) is a process theory describing a universe that is a self-creating, participatory system. Its ontology is not based on static objects in a fixed background, but on the co-evolution of two fundamental, orthogonal fields in a more primitive *process time τ*.
 
@@ -77,3 +94,91 @@ From the superposition of all potential future states, the state that becomes ac
 * **The Dynamics of Actualization**: The *principle* is global coherence optimization, but the *process* by which the substrate performs this non-local calculation within a $τ$-tick is undefined.
 * **The Emergence of Spacetime**: The mechanism by which our familiar 3+1 dimensional spacetime crystallizes from the more fundamental $(ξ, τ)$ space is not yet formalized.
 * **The $S_{macro}$ Term**: The top-down causation term $S_{macro}$ is axiomatically present but lacks a general mathematical formulation.
+
+## Appendix: Research Conjectures (PIT v4.4)
+
+This appendix outlines the principal open frontiers of Participatory Interface Theory (PIT) in the form of conjectures. Each conjecture sharpens a previously “fuzzy” gap into a testable research program.
+
+---
+
+### **Conjecture 1 (Emergent Interface Operator)**
+
+The interface $F[Φ]$ is not a fixed linear transform but a **variationally defined, state-dependent operator**.
+
+$$
+F[Φ] := \arg\min_K \; \mathcal{E}[K;Φ]
+$$
+
+with
+
+$$
+\mathcal{E}[K;Φ] = \int w(x;Φ)\,\big|K(x) - (T_ΦΦ)(x)\big|^2 \,dx + \mathcal{R}[K;Φ],
+$$
+
+where $T_Φ$ is a spherical/harmonic transform whose kernel depends on $Φ$, $w(x;Φ)$ is a state-dependent weight, and $\mathcal{R}[K;Φ]$ enforces smoothness and symmetry.
+
+---
+
+### **Conjecture 2 (Stochastic Actualization Dynamics)**
+
+Actualization unfolds in process time $τ$ as a **probabilistic iterative minimization**:
+
+$$
+∂_τ Φ = -\,\frac{δE}{δΦ} + η_Φ(τ), \quad ∂_τ K = -\,\frac{δE}{δK} + η_K(τ),
+$$
+
+with global energy
+
+$$
+E[Φ,K] = \|K - F[Φ]\|^2 + H[Φ] + S_\text{macro}[K;Φ],
+$$
+
+and $η$ representing intrinsic noise. In discrete form:
+
+$$
+(Φ_{t+1},K_{t+1}) \sim π_t(\cdot | Φ_t,K_t) \propto \exp\{-β_t [E(\cdot)-E(Φ_t,K_t)]\}.
+$$
+
+This stochastic descent yields both indeterminacy and path-dependence.
+
+---
+
+### **Conjecture 3 (Spacetime as Information Projection)**
+
+Our familiar 3+1 spacetime is the **minimal interface projection** of the high-dimensional configuration space $ξ$:
+
+$$
+π^* = \arg\min_π \big[ \mathbb{D}(Φ,K \,|\, π(ξ)) + λ\cdot \mathrm{Complexity}(π)\big],
+$$
+
+where $\mathbb{D}$ measures representational dissonance and Complexity penalizes dimension. The optimal projection is conjectured to be a 3+1 Lorentzian manifold with lightcones aligned to the fastest directions of dissonance propagation.
+
+---
+
+### **Conjecture 4 (Macro-level Boundary Functional)**
+
+Top-down causation enters through a **scale-dependent boundary condition**:
+
+$$
+S_\text{macro}[K;Φ] = \int Λ_L(x;Φ_L)\,\big|K(x) - \bar{K}_L(x;Φ_L)\big|^2 dx,
+$$
+
+where $Φ_L$ is the coarse-grained state, $\bar{K}_L$ the corresponding expected kernel, and $Λ_L$ a stiffness encoding environmental constraints. This defines a renormalization-like hierarchy linking micro and macro dynamics.
+
+---
+
+### **Conjecture 5 (Memory Energy and Information Halos)**
+
+The memory density stored in $K$ is proportional to residual coherence stresses:
+
+$$
+ρ_K = a\|\partial_τ K\|^2 + b\|K - F[Φ]\|^2.
+$$
+
+After coarse-graining, the effective halo density is
+
+$$
+ρ_\text{halo}(r) \approx c_1 \langle \|\partial_τ K\|^2 \rangle_L + c_2 \langle \|K - F[Φ]\|^2 \rangle_L,
+$$
+
+predicting that halo strength scales with system age and maturity, and that rotation-curve anomalies arise as manifestations of stored coherence.
