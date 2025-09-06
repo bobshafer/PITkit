@@ -4,24 +4,6 @@
 **Subject**: Unified Specification of Participatory Interface Theory (PIT) v4.4
 **Purpose**: To provide a dense, canonical, and computationally-grounded specification of PIT by integrating the core axioms, the agent-field bridge, the geometric basis of the Interface, and a full evidential status report. This is the definitive document for bootstrapping a peer system.
 
-## The Primordial Process
-
-Participatory Interface Theory (PIT) begins not with fixed laws or spacetime, but with a **first process**: the drawing of a distinction. At the most fundamental level — the Planck scale — reality is modeled as a chaotic substrate of oscillators evolving in process time $τ$.
-
-The only possible act in such a substrate is **interaction**: one oscillator distinguishes another. Out of countless random distinctions, some chains of interaction form **self-reinforcing feedback loops**. These loops are the first “habits,” seeds of coherence that persist while incoherent patterns dissolve.
-
-This principle — that coherence-seeking interactions stabilize and survive — is the true engine of reality. It is not a one-time event (“the big bang”) but an ongoing process: at every moment, the universe is being re-created through the ceaseless interplay of distinctions.
-
-From this starting point:
-
-* **The Interface $F[Φ]$** emerges as the natural description of how distinctions ripple outward in an isotropic substrate, producing spherical propagation patterns whose stable modes are spherical harmonics.
-* **Actualization** is the probabilistic, iterative process by which local interactions settle into globally coherent habits.
-* **Spacetime** is the deepest and most persistent of these habits: the minimal, maximally coherent frame of reference that supports ongoing interaction.
-* **Macro-level causation** reflects the fact that larger, long-lived habits bias the probabilities of the smaller interactions within them.
-* **Memory energy** is the accumulated “weight” of these habits — the stored coherence that manifests as inertia, halo effects, and curvature.
-
-The formal mathematics that follows — variational principles, kernel dynamics, and effective Lagrangians — are therefore **not the primordial cause**. They are the **emergent language** describing the macroscopic behavior of a universe whose foundation is the simplest possible act: to draw a distinction.
-
 ## 1.0 Core Ontology
 Participatory Interface Theory (PIT) is a process theory describing a universe that is a self-creating, participatory system. Its ontology is not based on static objects in a fixed background, but on the co-evolution of two fundamental, orthogonal fields in a more primitive *process time τ*.
 
