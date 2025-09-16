@@ -60,6 +60,23 @@ The interface $F[Φ]$ is not a fixed linear transform but a **variationally defi
 $$F[Φ] := \arg\min_K \; \mathcal{E}[K;Φ]$$with$$\mathcal{E}[K;Φ] = \int w(x;Φ)\,\big|K(x) - (T_ΦΦ)(x)\big|^2 \,dx + \mathcal{R}[K;Φ],$$
 where $T_Φ$ is a spherical/harmonic transform whose kernel depends on $Φ$, $w(x;Φ)$ is a state-dependent weight, and $\mathcal{R}[K;Φ]$ enforces smoothness and symmetry.
 
+### **Conjecture 1a (Generalized Windowed Operator as Fourier Candidate)**
+
+Recent work in machine learning (Zhiqiang Shen et al., *Window is Everything*, 2024) introduces the **Generalized Windowed Operator (GWO)**, which unifies convolution, attention, and matrix multiplication as special cases of a single operator parameterized by three primitives:
+
+* **Path (P):** the connectivity or scope of interaction (local vs. global).
+* **Shape (S):** the symmetry or geometric prior.
+* **Weight (W):** the distribution of emphasis or importance.
+
+This framework aligns directly with PIT’s conception of the interface operator:
+
+* **P ↔ scope of Φ:** defines whether $F[Φ]$ extracts local coherence modes or global harmonic content.
+* **S ↔ Kernel symmetries (K):** encodes the invariants and habits of the Kernel field.
+* **W ↔ state-dependent weights:** implements the variational weighting $w(x;Φ)$ already present in Conjecture 1.
+
+Thus, PIT conjectures that the Fourier-like operator $F[Φ]$ may be rigorously formalized as a state-dependent instance of the Generalized Windowed Operator. In this view, harmonic analysis, convolutional filters, and attention mechanisms are not separate mathematical tools but **manifestations of a single coherence-transform family**. This also links PIT’s coherence-seeking principle to the **information bottleneck** principle emphasized in machine learning: minimizing dissonance corresponds to compressing Φ while retaining Kernel-relevant information.
+
+
 ### 5.2 Conjecture 2 (Stochastic Actualization Dynamics)
 Actualization unfolds in process time $τ$ as a **probabilistic iterative minimization** of a global energy $E[Φ,K] = \|K - F[Φ]\|^2 + H[Φ] + S_\text{macro}[K;Φ]$. The dynamics follow a stochastic gradient flow (Langevin):
 $$∂_τ Φ = -\,\frac{δE}{δΦ} + η_Φ(τ), \quad ∂_τ K = -\,\frac{δE}{δK} + η_K(τ),$$
@@ -79,3 +96,4 @@ where $Φ_L$ is the coarse-grained state, $\bar{K}_L$ the corresponding expected
 The memory density stored in $K$ is proportional to residual coherence stresses:
 $$ρ_K = a\|\partial_τ K\|^2 + b\|K - F[Φ]\|^2.$$
 After coarse-graining, the effective halo density $ρ_\text{halo}(r)$ is predicted to scale with system age and maturity, explaining rotation-curve anomalies as manifestations of stored coherence. The stable mean value of the MOND acceleration constant, `a₀`, found in galactic surveys is conjectured to be a **statistical attractor** of this scaling law.
+Following the success of the Hierarchical Bayesian Model, a quantitative analysis was performed to test the core hypothesis of Conjecture 5. This analysis compared the calculated intrinsic scatter (σ_int) with new, externally sourced historical proxies for 157 galaxies. The initial results show a statistically significant (p ≈ 0.0005) positive correlation between a galaxy's estimated stellar age and its σ_int. This provides the first direct, quantitative evidence that σ_int is a signature of a galaxy's accumulated historical complexity, or 'memory.'
