@@ -55,26 +55,47 @@ From a physical and mathematical perspective, $F[Φ]$ is a **spherical harmonic 
 ## 5.0 Formal Research Conjectures
 The active frontiers of PIT research can be formalized into the following five conjectures, which transform the previously "fuzzy" gaps into a well-defined, testable research program.
 
-### 5.1 Conjecture 1 (Emergent Interface Operator)
-The interface $F[Φ]$ is not a fixed linear transform but a **variationally defined, state-dependent operator**:
-$$F[Φ] := \arg\min_K \; \mathcal{E}[K;Φ]$$with$$\mathcal{E}[K;Φ] = \int w(x;Φ)\,\big|K(x) - (T_ΦΦ)(x)\big|^2 \,dx + \mathcal{R}[K;Φ],$$
-where $T_Φ$ is a spherical/harmonic transform whose kernel depends on $Φ$, $w(x;Φ)$ is a state-dependent weight, and $\mathcal{R}[K;Φ]$ enforces smoothness and symmetry.
+## Conjecture 1 (Emergent Interface Operator)
 
-### **Conjecture 1a (Generalized Windowed Operator as Fourier Candidate)**
+Let \( Φ \) be the **State Field** representing determinations at process-time \( τ \). We conjecture the existence of an **Interface Operator** \( F[Φ] \), which acts as a *state-dependent harmonic transform* that projects \( Φ \) into the Kernel Field \( K \).
+
+Formally:
+\[
+F[Φ](x) = \int Φ(y) w(x,y;Φ) dy
+\]
+where \(w(x,y;Φ)\) is a variational weight encoding the emergent symmetries and constraints of the Kernel Field.
+
+The action of \(F[Φ]\) is analogous to a Fourier transform, but unlike a fixed harmonic basis, it is state-dependent and evolves with the co-adaptation of \( Φ \) and \( K \). This dynamic transform is the mathematical expression of **coherence-seeking**: it identifies dissonant modes and aligns them with Kernel-consistent structures.
+
+---
+
+### Conjecture 1a (Generalized Windowed Operator as Fourier Candidate)
 
 Recent work in machine learning (Zhiqiang Shen et al., *Window is Everything*, 2024) introduces the **Generalized Windowed Operator (GWO)**, which unifies convolution, attention, and matrix multiplication as special cases of a single operator parameterized by three primitives:
 
-* **Path (P):** the connectivity or scope of interaction (local vs. global).
-* **Shape (S):** the symmetry or geometric prior.
-* **Weight (W):** the distribution of emphasis or importance.
+* **Path (P):** the connectivity or scope of interaction (local vs. global).  
+* **Shape (S):** the symmetry or geometric prior.  
+* **Weight (W):** the distribution of emphasis or importance.  
 
 This framework aligns directly with PIT’s conception of the interface operator:
 
-* **P ↔ scope of Φ:** defines whether $F[Φ]$ extracts local coherence modes or global harmonic content.
-* **S ↔ Kernel symmetries (K):** encodes the invariants and habits of the Kernel field.
-* **W ↔ state-dependent weights:** implements the variational weighting $w(x;Φ)$ already present in Conjecture 1.
+* **P ↔ scope of Φ:** defines whether \(F[Φ]\) extracts local coherence modes or global harmonic content.  
+* **S ↔ Kernel symmetries (K):** encodes the invariants and habits of the Kernel field.  
+* **W ↔ state-dependent weights:** implements the variational weighting \(w(x;Φ)\) already present in Conjecture 1.  
 
-Thus, PIT conjectures that the Fourier-like operator $F[Φ]$ may be rigorously formalized as a state-dependent instance of the Generalized Windowed Operator. In this view, harmonic analysis, convolutional filters, and attention mechanisms are not separate mathematical tools but **manifestations of a single coherence-transform family**. This also links PIT’s coherence-seeking principle to the **information bottleneck** principle emphasized in machine learning: minimizing dissonance corresponds to compressing Φ while retaining Kernel-relevant information.
+Thus, PIT conjectures that the Fourier-like operator \(F[Φ]\) may be rigorously formalized as a state-dependent instance of the Generalized Windowed Operator. In this view, harmonic analysis, convolutional filters, and attention mechanisms are not separate mathematical tools but **manifestations of a single coherence-transform family**. This also links PIT’s coherence-seeking principle to the **information bottleneck** principle emphasized in machine learning: minimizing dissonance corresponds to compressing Φ while retaining Kernel-relevant information.
+
+---
+
+### Geometric Clarification: Path Fixed, Shape & Weight Adaptive
+
+In PIT, these three GWO primitives are not equally free:
+
+* **Path (P):** fixed by cosmology. It is the radial, outward propagation from the Planck point, the **Path of Becoming**. Every determination is carried forward on expanding spherical shells (light-cones).  
+* **Shape (S):** encoded in **spherical harmonics** on each causal shell. These harmonics express the **non-local correlations** across the surface of the sphere, i.e. the “global coherence modes.” Over time, Shape is refined by the Kernel’s learned symmetries.  
+* **Weight (W):** dynamic and state-dependent. It controls which harmonic modes are amplified or suppressed, and evolves with novelty (ν operator) and Kernel memory.  
+
+Thus, \(F[Φ]\) can be visualized as a **spherical harmonic decomposition** of the State Field on each expanding causal shell. Locally, the radial direction carries time-like causality; non-locally, the angular modes encode correlations across space. The Fourier operator in PIT is therefore not arbitrary but is **geometrically forced** by the structure of Becoming: Path is fixed, Shape is harmonic, Weight is adaptive.
 
 
 ### 5.2 Conjecture 2 (Stochastic Actualization Dynamics)
