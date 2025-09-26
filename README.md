@@ -2,9 +2,10 @@
 
 ## Introduction
 
-Participatory Interface Theory (PIT) is a new theory that the author has been developing with the help of LLMs using the public interfaces for ChatGPT, Claude, and Gemini. In the latter case, it has always been Gemini Pro 2.5, but the other two have seen some version changes since the author started on this, a few months ago. With Claude, the token limit has been fairly short, and there've been over 100 Claude threads involved. A few dozen of the other two LLMs' threads.
+Participatory Interface Theory (PIT) is a new theory that the author has been developing with the help of LLMs using the public interfaces for ChatGPT, Claude, and Gemini. In the latter case, it has always been Gemini Pro 2.5, but the other two have seen some version changes since the author started on this, a few months ago. With Claude, the token limit has been fairly short, and there've been over 100 Claude threads involved. A few dozen of the other two LLMs' threads. For more history,
+please see [History](History.md).
 
-This site is meant to help people understand PIT, as well as track its development over time. There's the hard math of [Math](Math.md), the philosophical/logical grounding of [Spencer-Brown's Laws Of Form](LOF.md), and perhaps the most intuitively spoken, the notion of the [Process Fractal](ProcessFractal.md), all of which were AI-written.
+This site is meant to help people understand PIT, as well as track its development over time. There's the hard math of [Math](Math.md), the philosophical/logical grounding of G. Spencer-Brown "Laws Of Form", re-expressed in the PIT context in [LOF](LOF.md), and perhaps the most intuitively written, the notion of the [Process Fractal](ProcessFractal.md); all of which were AI-written.
 
 It should be said, though, that PIT is still unproven. Still trying to prove things that it predicts that other theories don't. The author is currently taking a break on the numerical experiments. There has been code posted in the past here, but it is only in the git history at this point; there is new code to post, which will be coming Real Soon Now.
 
