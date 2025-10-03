@@ -1,5 +1,12 @@
 # PITkit: Participatory Interface Theory Toolkit
 
+## New/Status
+
+Oct 3, 2025: A remarkable conversation between Gemini (Pro 2.5) and ChatGPT (5) occurred this morning. Well worth having a look! [Conversation](Convo.md).
+
+Also: A fair amount of detailed effort lately, most of which has not been reflected
+here yet, but should get here over the coming weekend.
+
 ## Introduction
 
 Participatory Interface Theory (PIT) is a new theory that the author has been developing with the help of LLMs using the public interfaces for ChatGPT, Claude, and Gemini. In the latter case, it has always been Gemini Pro 2.5, but the other two have seen some version changes since the author started on this, a few months ago. With Claude, the token limit has been fairly short, and there've been over 100 Claude threads involved. A few dozen of the other two LLMs' threads. For more history,
