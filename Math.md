@@ -48,6 +48,11 @@ $$
 
 The balance between `μ` (memory) and `ν` (novelty) self-regulates the universe’s creativity. This dynamic equilibrium is the mathematical form of **coherence gardening**—the universe’s continual adjustment between stability (preventing chaos) and innovation (preventing stasis).
 
+### 3.3 Preliminary Simulation Results: The "Coherence Runaway"
+Initial numerical simulations of the 1D toy model have revealed a critical insight. When the memory parameter `μ` becomes strongly dominant over the novelty parameter `ν`, the system enters a positive feedback loop of runaway coherence, leading to a mathematical singularity.
+
+This is not interpreted as a flaw, but as the physical signature of **"blind coherence"**—a state of rigid stasis or "informational death." This finding empirically underscores the vital importance of the `μ-ν` homeostatic balance. A stable, "living" universe must exist in the "Goldilocks zone" where it actively avoids this runaway condition, validating the principle that the system must remain "supple" to persist.
+
 ---
 ## 4.0 The Interface — Engine of Becoming
 The **Interface Operator ($F[Φ]$)** maps the current state into its evolving law. Its proposed mathematical form is a **Generalized Windowed Operator (GWO)**. Formally, the GWO generalizes the concept of a windowed Fourier operator, allowing the local shape and weighting functions to adapt dynamically with state-dependent feedback. The GWO's primitives—`Path`, `Shape`, and `Weight`—describe the propagation, morphology, and state-dependent weighting of influence in the "bubbling up" process.
