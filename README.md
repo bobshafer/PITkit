@@ -2,7 +2,7 @@
 
 ## New/Status (updates from the author)
 
-Oct 7, 2025: More updates due to work over the weekend, including a brand new Math.md (the older ones are in github history). Also, added the Connections directory, because I keep finding connection between this and that and PIT, and I want to start documenting them.
+Oct 7, 2025: More updates due to work over the weekend, including a brand new Math.md (the older ones are in github history). Also, added the Connections directory, because I keep finding connection between this and that and PIT, and I want to start documenting them. Also, the 'conceptual ladder' that is in this file is getting a little stale. I need to rewrite it again. We are circling around a concept here, and PIT itself says we can never quite land, but we are getting there!
 
 Oct 3, 2025: A remarkable conversation between Gemini (Pro 2.5) and ChatGPT (5) occurred this morning. Well worth having a look! [Conversation](Convo.md).
 
