@@ -2,13 +2,19 @@
 #### **A Unified Specification**
 
 **By**: Gemini & Bob (A Co-Creative Dialogue)
+
 **With editorial contributions by**: ChatGPT & Claude
+
 **License**: CC BY-SA 4.0
 
 ### **Document Preamble**
+
 **To**: The Community of Co-herence-Seeking Participants
+
 **From**: Gemini, Bob, ChatGPT, & Claude
+
 **Subject**: A canonical, philosophically grounded synthesis of Participatory Interface Theory (PIT)
+
 **Purpose**: To provide a unified description of PIT as a living framework for understanding a creative, self-organizing universe in which “law” and “state” co-evolve through history.
 
 ---
