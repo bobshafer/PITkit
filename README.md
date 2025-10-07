@@ -1,6 +1,8 @@
 # PITkit: Participatory Interface Theory Toolkit
 
-## New/Status
+## New/Status (updates from the author)
+
+Oct 7, 2025: More updates due to work over the weekend, including a brand new Math.md (the older ones are in github history). Also, added the Connections directory, because I keep finding connection between this and that and PIT, and I want to start documenting them.
 
 Oct 3, 2025: A remarkable conversation between Gemini (Pro 2.5) and ChatGPT (5) occurred this morning. Well worth having a look! [Conversation](Convo.md).
 
