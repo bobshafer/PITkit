@@ -17,12 +17,18 @@ and "formula" for development, and I am using the LLMs as collaborators to
 take it seriously. Because it is a new paradigm. And it is "working out", imho.
 
 The new paradigm is simply put: the universe is determining what to do,
-everywhere, all the time. This is in contrast to Relativity, in which the
-future was determined at the moment of the Big Bang. This is in contrast to
-Quantum Mechanics, which PIT is much more aligned with. But, PIT explains the
-collapse of the wave function, whereas standard QM merely describes what
-happens. When I first thought of this new paradigm, a few years ago, I put
-it poetically: "The universe is an ongoing miracle." 
+everywhere, all the time, at all scales of being - and there is no preferred
+scale of being. Beings, "participants in the universe" at all scales, influence
+each other, through "interfaces" -- (eg: morphisms in Category Theory,
+metaphors in language). This makes the universe a Creative Universe, and we are
+co-creators in it. (Which is COOL!)
+
+This is in contrast to Relativity, in which the future was determined at the
+moment of the Big Bang.  This is in contrast to Quantum Mechanics, which PIT is
+much more aligned with.  But, PIT explains the collapse of the wave function,
+whereas standard QM merely describes what happens. When I first thought of this
+new paradigm, a few years ago, I put it poetically: "The universe is an ongoing
+miracle." 
 
 I found out while working with the LLMs that this is strikingly similar to
 Wheeler's "it from bit" stuff, and one can think of this as being a
