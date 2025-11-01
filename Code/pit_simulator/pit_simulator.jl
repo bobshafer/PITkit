@@ -415,6 +415,7 @@ function run_simulation(params::PITParams; verbose::Bool=true, galaxy_seed::Bool
         println("PIT Simulation Starting...")
         println("Parameters: μ=$(params.mu), ν=$(params.nu), α=$(params.alpha), β=$(params.beta)")
         println("Grid: $(params.N)×$(params.N), Steps: $(params.max_steps)")
+        println("Gaussian kernel: σ=$(params.kernel_sigma), size=$(params.kernel_size)")
         println("Galaxy seed: $galaxy_seed")
         println()
     end
@@ -530,8 +531,11 @@ function save_results(diag::Diagnostics, params::PITParams, filename::String)
         diag.mean_phi_value
     )
     
-    header = "tau,coherence,info_flow,entropy,correlation_length,mean_K,mean_Phi"
-    writedlm(filename, [header; data], ',')
+    # Write header as separate row, not as repeated column values
+    open(filename, "w") do io
+        println(io, "tau,coherence,info_flow,entropy,correlation_length,mean_K,mean_Phi")
+        writedlm(io, data, ',')
+    end
     
     # Save power spectra
     if !isempty(diag.power_spectra)
@@ -545,8 +549,18 @@ function save_results(diag::Diagnostics, params::PITParams, filename::String)
             ps_data[:, i+1] = diag.power_spectra[i]
         end
         
-        ps_header = "k," * join(["tau_" * string(t) for t in diag.power_spectra_tau], ",")
-        writedlm(ps_filename, [ps_header; ps_data], ',')
+        # Build proper header with individual column names
+        ps_header_parts = ["k"]
+        for t in diag.power_spectra_tau
+            push!(ps_header_parts, "tau_$t")
+        end
+        ps_header = join(ps_header_parts, ",")
+        
+        # Write header properly
+        open(ps_filename, "w") do io
+            println(io, ps_header)
+            writedlm(io, ps_data, ',')
+        end
         
         println("Power spectra saved to: $ps_filename")
     end
@@ -559,95 +573,121 @@ end
 # ============================================================================
 
 function parse_args()
+    # THIS IS THE NEW TEST:
+    println(">>> Running v3 FIXED parse_args function (handles key=value)...")
+    
     # Default parameters (Goldilocks zone)
-    params = PITParams(
-        0.005,    # mu
-        0.010,    # nu
-        0.09,     # alpha
-        0.04,     # beta
-        64,       # N
-        5000,     # max_steps
-        11,       # kernel_size
-        3.0,      # kernel_sigma
-        100,      # save_interval
-        42        # seed
-    )
+    mu_val = 0.005
+    nu_val = 0.010
+    alpha_val = 0.09
+    beta_val = 0.04
+    N_val = 64
+    max_steps_val = 5000
+    kernel_size_val = 11
+    kernel_sigma_val = 3.0
+    save_interval_val = 100
+    seed_val = 42
     
     galaxy = false
     output = "pit_results_" * Dates.format(now(), "yyyymmdd_HHMMSS") * ".csv"
     
-    # Simple argument parsing
+    # --- New Robust Parser ---
     i = 1
     while i <= length(ARGS)
         arg = ARGS[i]
-        if arg == "--mu" && i < length(ARGS)
-            params = PITParams(parse(Float64, ARGS[i+1]), params.nu, params.alpha, 
-                             params.beta, params.N, params.max_steps, params.kernel_size,
-                             params.kernel_sigma, params.save_interval, params.seed)
-            i += 2
-        elseif arg == "--nu" && i < length(ARGS)
-            params = PITParams(params.mu, parse(Float64, ARGS[i+1]), params.alpha,
-                             params.beta, params.N, params.max_steps, params.kernel_size,
-                             params.kernel_sigma, params.save_interval, params.seed)
-            i += 2
-        elseif arg == "--alpha" && i < length(ARGS)
-            params = PITParams(params.mu, params.nu, parse(Float64, ARGS[i+1]),
-                             params.beta, params.N, params.max_steps, params.kernel_size,
-                             params.kernel_sigma, params.save_interval, params.seed)
-            i += 2
-        elseif arg == "--beta" && i < length(ARGS)
-            params = PITParams(params.mu, params.nu, params.alpha,
-                             parse(Float64, ARGS[i+1]), params.N, params.max_steps,
-                             params.kernel_size, params.kernel_sigma, params.save_interval,
-                             params.seed)
-            i += 2
-        elseif arg == "--steps" && i < length(ARGS)
-            params = PITParams(params.mu, params.nu, params.alpha, params.beta,
-                             params.N, parse(Int, ARGS[i+1]), params.kernel_size,
-                             params.kernel_sigma, params.save_interval, params.seed)
-            i += 2
-        elseif arg == "--N" && i < length(ARGS)
-            params = PITParams(params.mu, params.nu, params.alpha, params.beta,
-                             parse(Int, ARGS[i+1]), params.max_steps, params.kernel_size,
-                             params.kernel_sigma, params.save_interval, params.seed)
-            i += 2
-        elseif arg == "--seed" && i < length(ARGS)
-            params = PITParams(params.mu, params.nu, params.alpha, params.beta,
-                             params.N, params.max_steps, params.kernel_size,
-                             params.kernel_sigma, params.save_interval, parse(Int, ARGS[i+1]))
-            i += 2
-        elseif arg == "--galaxy"
-            galaxy = true
-            i += 1
-        elseif arg == "--output" && i < length(ARGS)
-            output = ARGS[i+1]
-            i += 2
-        elseif arg == "--help"
-            println("""
-            PIT Simulator - Usage:
-            
-            julia pit_simulator.jl [OPTIONS]
-            
-            Options:
-              --mu VALUE       Memory parameter (default: 0.005)
-              --nu VALUE       Novelty parameter (default: 0.010)
-              --alpha VALUE    Conformance rate (default: 0.09)
-              --beta VALUE     Learning rate (default: 0.04)
-              --N VALUE        Grid size (default: 64)
-              --steps VALUE    Max simulation steps (default: 5000)
-              --seed VALUE     Random seed (default: 42)
-              --galaxy         Add galaxy seed to initial conditions
-              --output FILE    Output filename (default: auto-generated)
-              --help           Show this help
-              
-            Example:
-              julia pit_simulator.jl --mu=0.005 --nu=0.010 --steps=10000 --galaxy
-            """)
-            exit(0)
-        else
-            i += 1
+        key = ""
+        value = ""
+        
+        try
+            if occursin("=", arg)
+                # Handle "--key=value"
+                parts = split(arg, '=', limit=2)
+                key = parts[1]
+                value = parts[2]
+                i += 1 # Consume this one argument
+            elseif startswith(arg, "--") && i < length(ARGS) && !startswith(ARGS[i+1], "--")
+                # Handle "--key value"
+                key = arg
+                value = ARGS[i+1]
+                i += 2 # Consume both arguments
+            else
+                # Handle flag like "--galaxy" or "--help"
+                key = arg
+                i += 1
+            end
+
+            # --- Argument Processing ---
+            if key == "--mu"
+                mu_val = parse(Float64, value)
+            elseif key == "--nu"
+                nu_val = parse(Float64, value)
+            elseif key == "--alpha"
+                alpha_val = parse(Float64, value)
+            elseif key == "--beta"
+                beta_val = parse(Float64, value)
+            elseif key == "--sigma"
+                kernel_sigma_val = parse(Float64, value)
+                kernel_size_val = 2 * round(Int, 3 * kernel_sigma_val) + 1
+                println(">>> PARSER: Set kernel_sigma = $(kernel_sigma_val), kernel_size = $(kernel_size_val)")
+            elseif key == "--steps"
+                max_steps_val = parse(Int, value)
+            elseif key == "--N"
+                N_val = parse(Int, value)
+            elseif key == "--seed"
+                seed_val = parse(Int, value)
+            elseif key == "--galaxy"
+                galaxy = true
+            elseif key == "--output"
+                output = String(value)
+                println(">>> PARSER: Set output file = $(output)")
+            elseif key == "--help"
+                println("""
+                PIT Simulator - Usage:
+                
+                julia pit_simulator.jl [OPTIONS]
+                
+                Options: (Can use --key value OR --key=value)
+                  --mu VALUE       Memory parameter (default: 0.005)
+                  --nu VALUE       Novelty parameter (default: 0.010)
+                  --alpha VALUE    Conformance rate (default: 0.09)
+                  --beta VALUE     Learning rate (default: 0.04)
+                  --sigma VALUE    Gaussian kernel width (default: 3.0)
+                  --N VALUE        Grid size (default: 64)
+                  --steps VALUE    Max simulation steps (default: 5000)
+                  --seed VALUE     Random seed (default: 42)
+                  --galaxy         Add galaxy seed to initial conditions
+                  --output FILE    Output filename (default: auto-generated)
+                  --help           Show this help
+                  
+                Example:
+                  julia pit_simulator.jl --sigma=4.5 --galaxy --steps=5000 --output=sigma_4p5.csv
+                """)
+                exit(0)
+            else
+                println("Warning: Ignoring unknown argument: $(key)")
+            end
+        catch e
+            println("Error parsing argument $(arg): $e")
+            # Safely increment to avoid infinite loop
+            if !occursin("=", arg) && i <= length(ARGS)
+                 i += 1
+            end
         end
     end
+    
+    # Now, construct the *final* params struct
+    params = PITParams(
+        mu_val,
+        nu_val,
+        alpha_val,
+        beta_val,
+        N_val,
+        max_steps_val,
+        kernel_size_val,
+        kernel_sigma_val,
+        save_interval_val,
+        seed_val
+    )
     
     return params, galaxy, output
 end
