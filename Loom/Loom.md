@@ -1,4 +1,4 @@
-# Loom Language Specification v1.0
+# Loom Language Specification v2.0
 
 ### *A Meta-Language for Collaborative Program and Model Development*
 
@@ -13,6 +13,17 @@ It provides a single document format that unifies:
 2. **Formal specification** — typed definitions, constraints, and verifiable logic.
 
 This dual structure allows natural-language conversation to coexist with formal semantics, enabling AI models to reason, generate, and verify in the same document.
+
+### Version 2.0 Changes
+
+**Major Change:** Loom now uses **native markdown structure** instead of headers within code blocks.
+
+**Why:** 
+- Better human readability with collapsible sections
+- Improved LLM parsing (semantic tree vs. flat text)
+- Working table of contents in any markdown viewer
+- Clear separation: actual code in code blocks, metadata in tables/lists
+- Faster information retrieval for both humans and AI
 
 ---
 
@@ -34,64 +45,105 @@ This dual structure allows natural-language conversation to coexist with formal 
    Loom does not prescribe a runtime or logic engine.
    Formal blocks can be translated into languages such as Agda, Coq, Lean, or Rust for verification or execution.
 
+5. **Type-Theoretic Foundation**
+   The formal layer is based on Intuitionistic Type Theory (ITT), as developed by Per Martin-Löf.
+   This provides constructive semantics, dependent types, and proof-carrying code capabilities.
+
 ---
 
 ## 3. File Structure
 
-Each `.loom` or `.loom.md` file has three main sections:
+### v2.0 Structure (Native Markdown)
 
-```loom
-meta:
-informal:
-formal:
+Loom files now use **actual markdown headers** for organization:
+
+```markdown
+# Document Title
+
+**Version:** v1.0  
+**Authors:** Alice, Codex  
+**Date:** 2025-11-05
+
+## Overview
+
+Natural language description...
+
+## Section Name
+
+### Subsection
+
+Content with **proper markdown formatting**.
+
+#### Detailed Item
+
+**Property:** Value  
+**Another Property:** Value
+
+| Structured | Data |
+|------------|------|
+| In | Tables |
+
+### Code Examples
+
+```language
+// Actual code in proper code blocks
+def function():
+    return result
 ```
 
-### Example Skeleton
+## Formal Specification
+
+```yaml
+type: Time
+  domain: Set
+  
+type: State
+  signature: Time → Set
+```
+```
+
+### Legacy Structure (v1.0)
+
+The older format used headers within text blocks (now deprecated but still parseable):
 
 ```loom
 meta:
   title: "Orbital Resonance Simulation"
-  version: "v1.0"
-  authors: ["Alice", "Codex", "Gemini"]
-  date: "2025-11-05"
-
 informal:
   purpose: |
-    Define a simulation interface for multi-body resonance systems.
-    The formal section below specifies the stepwise update of state
-    and parameters.
-
-  notes: |
-    This file serves as a shared specification among agents.  
-    Each version is self-contained and mergeable via semantic diff.
-
+    Description here
 formal:
   type Time : Set
-  type State : Time → Set
-  type Kernel : (t : Time) → State t → Set
-
-  def step :
-      (t : Time) → (s : State t) → (k : Kernel t s) →
-      Σ[ s' ∈ State (t+1) ] Kernel (t+1) s'
-
-  theorem CoherenceBound :
-      ∀ t s k. (0 ≤ k.C ≤ 1) →
-      (step t s k).snd.C ∈ [0,1]
 ```
 
 ---
 
 ## 4. Syntax and Semantics
 
-| Concept            | Description                                                                     |
-| ------------------ | ------------------------------------------------------------------------------- |
-| **meta:**          | Document metadata (title, version, participants, date).                         |
-| **informal:**      | Narrative and reasoning, written in natural language or Markdown.               |
-| **formal:**        | Structured block with typed definitions and rules.                              |
-| **Σ[ x ∈ A ] B x** | Dependent pair — represents “a value x of A, and a value of type B(x)”.         |
-| **References**     | Identifiers may link between informal and formal sections for coherence.        |
-| **Imports**        | `import:` directive allows linking to other Loom documents.                     |
-| **Execution**      | Interpreters can read the formal block and emit valid ITT/Agda/Coq definitions. |
+### Structural Elements
+
+| Element | v2.0 Format | Purpose |
+|---------|-------------|---------|
+| **Document Metadata** | Native markdown (bold key-value pairs) | Title, version, authors, date |
+| **Sections** | `##` headers | Major organizational units |
+| **Subsections** | `###` and `####` headers | Hierarchical content |
+| **Metadata Fields** | Tables or `**Key:** Value` format | Structured data |
+| **Code Examples** | Code blocks with language tag | Actual implementation code |
+| **Formal Specs** | YAML or structured blocks | Machine-parseable definitions |
+
+### Semantic Concepts
+
+| Concept | Description |
+|---------|-------------|
+| **Native Headers** | Use markdown `#`, `##`, `###` for structure (not headers in code blocks) |
+| **Metadata** | Document properties shown as `**Key:** Value` or tables |
+| **Narrative** | Natural language sections explaining intent and rationale |
+| **Formal Definitions** | YAML blocks or structured notation for type definitions |
+| **Code Examples** | Real code in language-specific blocks (```c, ```python, etc.) |
+| **ITT** | Intuitionistic Type Theory (Per Martin-Löf) — constructive foundation |
+| **Σ[ x ∈ A ] B x** | Dependent pair — "a value x of A, and a value of type B(x)" |
+| **Cross-references** | Use markdown links: `[Section Name](#section-name)` |
+| **Imports** | Reference other Loom documents via links |
 
 ---
 
