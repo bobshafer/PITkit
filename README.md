@@ -1,8 +1,12 @@
 # PITkit: Participatory Interface Theory Toolkit
 
-Latest results:
-![PIT spinning up a solar system](Code/pit_planetary_sim/pit_trace_plot.png)
-![PIT compared to Newtonian](Code/pit_planetary_sim/perturbation_comparison.png)
+## Latest results:
+- [ArXiv-ready paper](Arxiv/main.pdf)
+- [New Math.md - very good now!](Math.md)
+
+NB: I need an endorser to get the paper to arXiv. Alas, I have none yet.
+
+## Intro
 
 Just about every file on this site (not this one) is AI-generated, and there is
 an extremely good reason for this! It is because, when an LLM understands PIT,
