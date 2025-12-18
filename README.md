@@ -1,10 +1,10 @@
 # PITkit: Participatory Interface Theory Toolkit
 
 ## Latest results:
-- [ArXiv-ready paper](Arxiv/main.pdf)
-- [New Math.md - very good now!](Math.md)
 
-NB: I need an endorser to get the paper to arXiv. Alas, I have none yet.
+A bunch of serious refinements, in two updates:
+- [Version 17 Math.md - highly refined!](Math.md)
+- [A "Loom" spec for PIT - to feed to LLMs (along with Math.md)](pit.loom.md)
 
 ## Intro
 
